@@ -1,7 +1,7 @@
 {
   "name": "dashboard",
   "version": "0.1.0",
-  "homepage": "https://Demola2.github.io/dashboard",
+  "homepage": "https://Demola2.github.io/Dashboard",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.3",
