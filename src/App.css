@@ -1,38 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  overflow: hidden;
+}
+.mainpage_container {
+  flex: 1;
+  background: white;
+  padding: 0px 0px;
+  border-left: 2px solid lightgray;
+}
+.mainpage_header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid lightgray;
+  padding: 17px 25px;
+  justify-content: space-between;
+}
+.header_icon_two {
+  display: none;
+}
+.search_and_admin_field {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.mainpage_search {
+  border: 2px solid lightgray;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 9px;
+  border-radius: 7px;
+}
+.mainpage_search > input {
+  border: 0;
+  background: 0;
+  outline: 0;
+}
+.header_icon {
+  color: lightgray;
+  /* font-size: 22px; */
+}
+.header_icon > svg {
+  font-size: 2.3em;
+}
+.my_image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+.mainpage_content {
+  background: rgba(250, 246, 246, 0.788);
+}
+.box_house {
+  display: flex;
+  gap: 25px;
+  padding: 15px 22px;
+}
+.box_one {
+  border-radius: 9px;
+  background: white;
+  width: 300px;
+  height: 150px;
+  flex: 1;
+  padding: 10px 15px;
+}
+.box_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.amount_fields {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.percentage {
+  display: flex;
+  border-radius: 15px;
+  background: lightgreen;
+  align-items: center;
+  padding: 3px;
+}
+.chart_sales_field {
+  display: flex;
+  gap: 10px;
+  padding: 0px 22px;
+  margin-top: 10px;
+}
+.chart_fields {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 5px;
+  border-radius: 10px;
+}
+.chart_header {
+  display: flex;
+  align-items: center;
+  padding: 20px 22px;
+  justify-content: space-between;
+}
+.chart_selector {
+  border: 2px solid lightgray;
+  padding: 5px;
+  color: black;
+  border-radius: 7px;
+}
+.sales_fields {
+  background: white;
+  flex: 1;
+  border-radius: 5px;
+}
+.sales_header {
+  display: flex;
+  align-items: center;
+  padding: 20px 22px;
+  justify-content: space-between;
+}
+.sales_buttons {
+  padding: 9px;
+  border: 0;
+  border-radius: 5px;
+}
+.sales_body {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-top: 2px solid lightgray;
+  justify-content: space-between;
+}
+.sales_admin {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+.sales_image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+.table_and_total_fields {
+  display: flex;
+  padding: 10px 22px;
+}
+.table_field {
+  /* height: 200px; */
+  flex: 1;
+  border-radius: 6px;
+}
+.total_fields {
+  border: 2px solid yellow;
+  width: 600px;
+  /* height: 200px; */
+  /* flex: 1; */
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-radius: 6px;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+}
+td {
+  padding: 8px;
+}
+.head_one {
+  display: flex;
+  align-items: center;
+}
+tbody {
+  margin: 22px;
+  background: white;
+}
+
+.table_image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+}
+.image_container {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.tableBtn {
+  padding: 7px 15px;
+  border: 0;
+  border-radius: 9px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.tableBtn.green {
+  background: rgba(0, 128, 0, 0.45);
+}
+.tableBtn.red {
+  background: rgb(234, 83, 83);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 1515px) {
+  .chart_fields {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .box_house {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .total_fields {
+    display: none;
   }
 }
+@media screen and (max-width: 1190px) {
+  .box_house {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .search_and_admin_field {
+    display: none;
+  }
+  .header_icon_two {
+    display: block;
+  }
+}
+/* @media screen and (max-width: 1190px) {
+} */
